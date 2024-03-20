@@ -1,6 +1,6 @@
-/* .active {
-  top: 100px !important;
-} */
+.active {
+  top: 40px !important;
+}
 
 body {
   font-family: "JetBrains Mono", monospace;

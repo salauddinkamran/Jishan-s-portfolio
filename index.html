@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
   <!-- Font awesome cdn link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   <!-- Remixicon cdn link -->
@@ -16,19 +17,121 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- css file link -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+
+      fontFamily: {
+        Handjet: ['Handjet', 'sans-serif'],
+      },
+      extend: {
+
+      }
+      },
+    }
+  </script>
 </head>
 <body>
 
-  <section class="bg-gray-900">
+  <!-- <div class="bg-[#000107] shadow-2xl shadow-[#004F41] w-full h-3"></div> -->
+
+  <header class="bg-[#000107] h-screen shadow-inner relative w-full">
+    <img class="sm:absolute sm:top-[37%] sm:left-0 hidden sm:block" src="./assets/img/left-bg-img.png" alt="">
+    <div class="contianer mx-auto">
+      <div class="flex justify-center">
+        <nav class="text-white relative pt-5 w-full mx-auto">
+          <img id="navIcon" class="w-7 h-7 mx-auto md:hidden" src="./assets/img/navbar-Icon.svg" alt="">
+          <ul id="menu" class="flex flex-col gap-4 pt-[50px] absolute top-[-500px] w-full duration-300 md:top-0 md:flex-row md:justify-center md:gap-[45px]">
+            <li class="text-center"><a class="text-white hover:text-[#00E082]" href="#">{.Home}</a></li>
+            <li class="text-center"><a class="text-white hover:text-[#00E082]" href="#">{.Portfolio}</a></li>
+            <li class="text-center"><a class="text-white hover:text-[#00E082]" href="#">{.Github}</a></li>
+            <li class="text-center"><a class="text-white hover:text-[#00E082]" href="#">{.Con act}</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="w-full md:w-[700px] mx-auto mt-24">
+        <img src="./assets/img/programing-man-img.png" alt="">
+        <h1 class="font-Handjet text-white text-center text-[70px] leading-[60px] font-bold -mt-10 sm:-mt-20 sm:text-[90px] sm:leading-[80px] md:text-[120px] md:leading-[100px] lg:text-[135px] lg:leading-[120px] xl:text-[150px] xl:leading-[130px]">ABDUL AZIZ <br><span class="text-[#00FF85]">JISHAN</span></h1>
+      </div>
+    </div>
+    <img class="sm:absolute sm:top-[27%] sm:right-0 hidden sm:block" src="./assets/img/right-bg-img.png" alt="">
+  </header>
+
+
+
+  <section class="bg-[#000107] bg-[url('./assets/img/black-bg-img.png')] bg-no-repeat bg-cover py-[120px] border-y border-[#256D47]">
+    <div class="relative mb-[100px]">
+      <img class="hidden absolute left-0 sm:block sm:top-[25%] sm:w-[25%] md:top-[50%] md:w-[22%] lg:top-[70%] lg:w-[15%] xl:top-[30%] xl:w-[28%] 2xl:w-[30%] 2xl:top-[-30%]" src="./assets/img/title-left-icon.png" alt="">
+      <div class="container mx-auto">
+        <div class="text-white relative">
+          <div>
+            <h1 class="relative text-center text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-[#00FF85] font-bold">
+              <sup class="absolute text-[20px] text-[#FFDB80]">h2</sup>
+              Technology I Am Using
+              <sub class="absolute text-[20px] text-[#FFDB80]">h2</sub>
+            </h1>
+            
+          </div>
+        </div>
+      </div>
+      <img class="hidden absolute right-0 w-1/2 sm:block sm:w-[40%] sm:top-[-30%] md:w-[35%] md:top-[-30%] lg:top-[-15%] lg:w-[22%] xl:top-[-40px] xl:w-[45%]" src="./assets/img/title-right-icon.png" alt="">
+    </div>
     <div class="container mx-auto">
-      <div class="py-40 px-5 lg:w-3/4 lg:mx-auto md:px-0">
-        <h1 class="text-3xl font-bold text-center text-white mb-14 leading-relaxed sm:text-4xl sm:leading-loose md:text-5xl md:leading-relaxed lg:text-6xl lg:leading-relaxed xl:text-7xl xl:leading-relaxed">READ MY LATEST BLOG AND MY WORK PROCESS</h1>
-        <input type="text" placeholder="Search for blog" class="bg-black text-[#7E8984] w-full py-3 px-4 md:py-5 md:px-6 border border-[#545066] outline-none">
+      <div class="text-white grid sm:grid-rows-1 sm:grid-cols-3 gap-6 pb-10 px-5 ">
+        <div class="bg-[#000107] text-center border-y-[2px] border border-[#00EB97] py-4">
+          <span class="text-[#A9FFE6] text-2xl">HTML</span>
+        </div>
+        <div class="bg-[#000107] text-center border border-[#00EB97] py-4">
+          <span class="text-[#A9FFE6] text-2xl">CSS</span>
+        </div>
+        <div class="bg-[#000107] text-center border border-[#00EB97] py-4">
+          <span class="text-[#A9FFE6] text-2xl">JAVASCRIPT</span>
+        </div>
+      </div>
+      <div class="text-white grid sm:grid-rows-1 sm:grid-cols-3 gap-6 pb-10 px-5 ">
+        <div class="bg-[#000107] text-center border-y-[2px] border border-[#00EB97] py-4">
+          <span class="text-[#A9FFE6] text-2xl">REACT</span>
+        </div>
+        <div class="bg-[#000107] text-center border border-[#00EB97] py-4">
+          <span class="text-[#A9FFE6] text-2xl">METERIAL UI</span>
+        </div>
+        <div class="bg-[#000107] text-center border border-[#00EB97] py-4">
+          <span class="text-[#A9FFE6] text-2xl">NODE JS</span>
+        </div>
+      </div>
+      <div class="text-white grid sm:grid-rows-1 sm:grid-cols-3 gap-6 pb-10 px-5 ">
+        <div class="bg-[#000107] text-center border-y-[2px] border border-[#00EB97] py-4">
+          <span class="text-[#A9FFE6] text-2xl">BOOTSTRAP</span>
+        </div>
+        <div class="bg-[#000107] text-center border border-[#00EB97] py-4">
+          <span class="text-[#A9FFE6] text-2xl">MONGO DB</span>
+        </div>
+        <div class="bg-[#000107] text-center border border-[#00EB97] py-4">
+          <span class="text-[#A9FFE6] text-2xl">REACT</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="bg-gray-900 pb-10">
+
+
+  <section class="bg-[#000107] h-[100%] py-[150px]">
+    <div class="relative mb-[100px]">
+      <img class="hidden absolute left-0 sm:block sm:top-[25%] sm:w-[25%] md:top-[50%] md:w-[22%] lg:top-[70%] lg:w-[15%] xl:top-[30%] xl:w-[28%] 2xl:w-[30%] 2xl:top-[-30%]" src="./assets/img/title-left-icon.png" alt="">
+      <div class="container mx-auto">
+        <div class="text-white relative">
+          <div>
+            <h1 class="relative text-center text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-[#00FF85] font-bold">
+              <sup class="absolute text-[20px] text-[#FFDB80]">h2</sup>
+              Blog & Articles
+              <sub class="absolute text-[20px] text-[#FFDB80]">h2</sub>
+            </h1>
+            
+          </div>
+        </div>
+      </div>
+      <img class="hidden absolute right-0 w-1/2 sm:block sm:w-[40%] sm:top-[-30%] md:w-[35%] md:top-[-30%] lg:top-[-15%] lg:w-[22%] xl:top-[-40px] xl:w-[45%]" src="./assets/img/title-right-icon.png" alt="">
+    </div>
     <div class="container mx-auto">
       <div class="px-10 lg:grid lg:grid-cols-2 lg:gap-5">
         <div class="mb-12">
@@ -56,103 +159,101 @@
           </div>
         </div>
       </div>
-      <div class="px-10 lg:grid lg:grid-cols-2 lg:gap-5">
-        <div class="mb-12">
-          <img class="md:w-full" src="./assets/img/blog-img-3.png" alt="">
-          <div class="mt-8 lg:flex lg:justify-between">
-            <div class="text-center lg:text-left lg:w-3/4">
-              <h3 class="text-lg sm:text-2xl md:text-[28px] text-white font-semibold mb-5">Design UI/UX for Metaverse Banking System</h3>
-              <span class="text-base sm:text-xl text-[#65676C] block">Publishing date: 2 January, 2023</span>
-            </div>
-            <div class="hidden lg:block">
-              <span class="text-[#7B7D7C] text-xl">25 min read</span>
-            </div>
-          </div>
-        </div>
-        <div class="mb-12">
-          <img class="md:w-full" src="./assets/img/blog-img-4.png" alt="">
-          <div class="mt-8 lg:flex lg:justify-between">
-            <div class="text-center lg:text-left lg:w-3/4">
-              <h3 class="text-lg sm:text-2xl md:text-[28px] text-white font-semibold mb-5">Design UI/UX for Metaverse Banking System</h3>
-              <span class="text-base sm:text-xl text-[#65676C] block">Publishing date: 2 January, 2023</span>
-            </div>
-            <div class="hidden lg:block">
-              <span class="text-[#7B7D7C] text-xl">25 min read</span>
-            </div>
+      <div class="text-center mt-5">
+        <a class="text-[#00FF85]" href="#"> Read all blogs </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-[#000107] h-[100%] pb-[150px]">
+    <div class="relative mb-[100px]">
+      <img class="hidden absolute left-0 sm:block sm:top-[25%] sm:w-[25%] md:top-[50%] md:w-[22%] lg:top-[70%] lg:w-[15%] xl:top-[30%] xl:w-[28%] 2xl:w-[30%] 2xl:top-[-30%]" src="./assets/img/title-left-icon.png" alt="">
+      <div class="container mx-auto">
+        <div class="text-white relative">
+          <div>
+            <h1 class="relative text-center text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-[#00FF85] font-bold">
+              <sup class="absolute text-[20px] text-[#FF6F6F]">h2</sup>
+              Follow Me
+              <sub class="absolute text-[20px] text-[#FF6F6F]">h2</sub>
+            </h1>
+            
           </div>
         </div>
       </div>
-      <div class="px-10 lg:grid lg:grid-cols-2 lg:gap-5">
-        <div class="mb-12">
-          <img class="md:w-full" src="./assets/img/blog-img-5.png" alt="">
-          <div class="mt-8 lg:flex lg:justify-between">
-            <div class="text-center lg:text-left lg:w-3/4">
-              <h3 class="text-lg sm:text-2xl md:text-[28px] text-white font-semibold mb-5">Design UI/UX for Metaverse Banking System</h3>
-              <span class="text-base sm:text-xl text-[#65676C] block">Publishing date: 2 January, 2023</span>
-            </div>
-            <div class="hidden lg:block">
-              <span class="text-[#7B7D7C] text-xl">25 min read</span>
-            </div>
-          </div>
+      <img class="hidden absolute right-0 w-1/2 sm:block sm:w-[40%] sm:top-[-30%] md:w-[35%] md:top-[-30%] lg:top-[-15%] lg:w-[22%] xl:top-[-40px] xl:w-[45%]" src="./assets/img/title-right-icon.png" alt="">
+    </div>
+    <div class="border-y border-dashed py-5">
+      <div class="text-white md:grid md:grid-rows-1 md:grid-cols-2 lg:grid-flow-row-2 lg:grid-cols-3 2xl:grid-rows-1 2xl:grid-cols-5 border-y border-[#00412A] py-[30px]">
+        <div>
+          <h3 class="text-center text-[#8C929F] text-[64px] font-semibold hover:text-[#00FF85]">Twitter</h3>
         </div>
-        <div class="mb-12">
-          <img class="md:w-full" src="./assets/img/blog-img-6.png" alt="">
-          <div class="mt-8 lg:flex lg:justify-between">
-            <div class="text-center lg:text-left lg:w-3/4">
-              <h3 class="text-lg sm:text-2xl md:text-[28px] text-white font-semibold mb-5">Design UI/UX for Metaverse Banking System</h3>
-              <span class="text-base sm:text-xl text-[#65676C] block">Publishing date: 2 January, 2023</span>
-            </div>
-            <div class="hidden lg:block">
-              <span class="text-[#7B7D7C] text-xl">25 min read</span>
-            </div>
-          </div>
+        <div>
+          <h3 class="text-center text-[#8C929F] text-[64px] font-semibold hover:text-[#00FF85]">Linkedin</h3>
         </div>
-      </div>
-      <div class="px-10 lg:grid lg:grid-cols-2 lg:gap-5">
-        <div class="mb-12">
-          <img class="md:w-full" src="./assets/img/blog-img-7.png" alt="">
-          <div class="mt-8 lg:flex lg:justify-between">
-            <div class="text-center lg:text-left lg:w-3/4">
-              <h3 class="text-lg sm:text-2xl md:text-[28px] text-white font-semibold mb-5">Design UI/UX for Metaverse Banking System</h3>
-              <span class="text-base sm:text-xl text-[#65676C] block">Publishing date: 2 January, 2023</span>
-            </div>
-            <div class="hidden lg:block">
-              <span class="text-[#7B7D7C] text-xl">25 min read</span>
-            </div>
-          </div>
+        <div>
+          <h3 class="text-center text-[#8C929F] text-[64px] font-semibold hover:text-[#00FF85]">Github</h3>
         </div>
-        <div class="mb-12">
-          <img class="md:w-full" src="./assets/img/blog-img-8.png" alt="">
-          <div class="mt-8 lg:flex lg:justify-between">
-            <div class="text-center lg:text-left lg:w-3/4">
-              <h3 class="text-lg sm:text-2xl md:text-[28px] text-white font-semibold mb-5">Design UI/UX for Metaverse Banking System</h3>
-              <span class="text-base sm:text-xl text-[#65676C] block">Publishing date: 2 January, 2023</span>
-            </div>
-            <div class="hidden lg:block">
-              <span class="text-[#7B7D7C] text-xl">25 min read</span>
-            </div>
-          </div>
+        <div>
+          <h3 class="text-center text-[#8C929F] text-[64px] font-semibold hover:text-[#00FF85]">Instagram</h3>
+        </div>
+        <div>
+          <h3 class="text-center text-[#8C929F] text-[64px] font-semibold hover:text-[#00FF85]">Facebook</h3>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="border-t border-[#232E29] bg-gray-900 py-10">
+
+  <section class="bg-[#000107] bg-[url('./assets/img/Mask group.png')] bg-no-repeat bg-cover py-[120px] relative">
+    <img src="./assets/img/footer-right-img.png" class="absolute top-[70px] -right-[50px] hidden md:block 2xl:right-0 2xl:top-[150px]" alt="">
     <div class="container mx-auto">
-      <div class="flex justify-around items-center w-full mx-auto sm:w-3/4 md:w-1/2 lg:w-1/3">
-        <a class="text-xs text-[#607B96] duration-300 hover:text-[#00FF85]" href="#"><i class="fa-solid fa-chevron-left"></i> prev</a>
-        <a class="text-xs text-white border border-[#607B96] py-2 px-3 duration-300 hover:border-[#00FF85]" href="#">1</a>
-        <a class="text-xs text-white border border-[#607B96] py-2 px-3 duration-300 hover:border-[#00FF85]" href="#">2</a>
-        <a class="text-xs text-white border border-[#607B96] py-2 px-3 duration-300 hover:border-[#00FF85]" href="#">3</a>
-        <a class="text-xs text-white border border-[#607B96] py-2 px-3 duration-300 hover:border-[#00FF85]" href="#">4</a>
-        <a class="text-xs text-white border border-[#607B96] py-2 px-3 duration-300 hover:border-[#00FF85]" href="#">5</a>
-        <a class="text-xs text-[#607B96] duration-300 hover:text-[#00FF85]" href="#">Next <i class="fa-solid fa-chevron-right"></i></a>
+      <div class="text-white md:flex md:justify-between mx-5 gap-10">
+        <div class="md:w-1/2 mb-[80px]">
+          <div class="mb-10">
+            <span class="text-[#FF64E6] text-xl">h1</span>
+            <h3 class="text-[#00FF85] text-[50px] font-bold">Say Hello</h3>
+            <span class="text-[#FFDB80] text-xl">h1</span>
+          </div>
+          <div>
+            <span class="text-[#FF6F6F] text-xl">h1</span>
+            <p class="text-[#8C929F] text-[20px] py-3">I'm a UX/Product Designer with a background in enterprise applications, financial services, and local consumer sites. </p>
+            <span class="text-[#FF64E6] text-xl">h1</span>
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <form action="" class="grid gap-5 mb-[104px]">
+            <input class="bg-[#091016] w-full py-[30px] px-[30px] text-[24px] text-white" type="text" placeholder="Name">
+            <input class="bg-[#091016] w-full py-[30px] px-[30px] text-[24px] text-white" type="gmail" placeholder="Mail">
+            <input class="bg-[#091016] w-full py-[30px] px-[30px] text-[24px] text-white" type="text" placeholder="Address">
+            <input class="bg-[#091016] w-full py-[30px] px-[30px] text-[24px] text-white" type="text" placeholder="Message">
+          </form>
+          <button class="w-[200px] py-5 text-sm text-white font-medium text-center mx-auto block border-l-4 bg-gray-700">View details</button>
+        </div>
       </div>
     </div>
+    <img src="./assets/img/footer-bottom-img.png" class="absolute hidden md:block bottom-[140px] left-[-337px] xl:left-0" alt="">
   </section>
 
 
-  
+  <footer class="bg-[#00332A] py-2">
+    <div class="container mx-auto">
+      <div class="bg-[#0D1A1A] flex flex-col text-center gap-10 lg:flex-row lg:justify-between lg:items-center py-[50px] px-5 lg:px-[110px]">
+        <div class="flex gap-[42px] mx-auto lg:mx-0">
+          <a href="#"><i class="fa-brands fa-github text-[#909494] text-[30px]"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter text-[#909494] text-[30px]"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube text-[#909494] text-[30px]"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook text-[#909494] text-[30px]"></i></a>
+        </div>
+        <a href="#" class="text-[#8C929F] underline text-xl">Contact with designer</a>
+        <p class="text-[#8C929F] text-xl">© 2023 Abdul Aziz Jishan</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
   <!-- javascript file link -->
   <script src="./assets/script.js"></script>
 </body>
